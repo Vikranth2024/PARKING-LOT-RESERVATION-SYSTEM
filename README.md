@@ -15,6 +15,7 @@ A full-stack parking lot management system featuring a Java & Spring Boot backen
 * [Core Features](#core-features)
 * [Tech Stack](#tech-stack)
 * [Getting Started](#getting-started)
+* [Testing](#testing)
 * [Usage](#usage)
 * [API Endpoint Overview](#api-endpoint-overview)
 
@@ -55,6 +56,7 @@ This project implements a complete parking lot reservation system. The backend p
 * **Framework**: Java 17 & Spring Boot 3+
 * **Database**: MySQL
 * **Data Access**: Spring Data JPA (Hibernate)
+* **Testing**: JUnit 5 & Mockito
 * **Validation**: Jakarta Bean Validation
 * **Error Handling**: Centralized with `@ControllerAdvice`
 
@@ -75,14 +77,39 @@ This project implements a complete parking lot reservation system. The backend p
 * MySQL Server
 
 ### Backend Setup
-1.  Clone the repository.
-2.  Configure the database in `src/main/resources/application.properties` with your local MySQL credentials.
-3.  Run the application from your IDE or via the command line with `mvn spring-boot:run`. The backend will start on `http://localhost:8080`.
+1.  Clone the repository.
+
+2.  Configure the database in `src/main/resources/application.properties` with your local MySQL credentials.
+
+3.  Run the application from your IDE or via the command line with `mvn spring-boot:run`. The backend will start on `http://localhost:8080`.
 
 ### Frontend Setup
-1.  Navigate to the `parking-lot-frontend` directory.
-2.  Install dependencies: `npm install`.
-3.  Run the development server: `npm run dev`. The frontend will start on `http://localhost:5173`.
+1.  Navigate to the `parking-lot-frontend` directory.
+
+2.  Install dependencies: `npm install`.
+
+3.  Run the development server: `npm run dev`. The frontend will start on `http://localhost:5173`.
+
+---
+
+## Testing
+
+The backend includes a suite of unit tests for the service layer to ensure the core business logic is correct and robust. These tests were written using **JUnit 5** and **Mockito** to isolate service logic from the database layer, satisfying the requirement for high code coverage.
+
+### How to Run the Tests
+You can run the tests in two ways:
+
+1.  **Using your IDE**:
+    * Navigate to the `src/test/java` directory.
+    * Right-click on the `com.vikranth.parkinglotsystem` package and select "Run tests".
+
+2.  **Using the Command Line**:
+    * Open a terminal in the root directory of the backend project.
+    * Run the following Maven command:
+        ```bash
+        mvn test
+        ```
+Maven will execute all unit tests and generate a report.
 
 ---
 
