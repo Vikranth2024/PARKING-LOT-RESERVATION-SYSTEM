@@ -10,6 +10,11 @@ A full-stack parking lot management system featuring a Java & Spring Boot backen
 
 ---
 
+## Deployment Links
+
+* Frontend - https://parking-lot-reservation-system.netlify.app
+* Backend - https://parking-lot-reservation-system-backend.onrender.com
+
 ## Table of Contents
 * [About the Project](#about-the-project)
 * [Core Features](#core-features)
