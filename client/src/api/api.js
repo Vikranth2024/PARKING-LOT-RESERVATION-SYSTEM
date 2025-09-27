@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8080/api';
+const API_BASE_URL = 'https://parking-lot-reservation-system-backend.onrender.com/api';
 
 const request = async (endpoint, options = {}) => {
   const response = await fetch(`${API_BASE_URL}${endpoint}`, options);
@@ -64,4 +64,5 @@ export const deleteSlot = (slotId) => {
   return request(`/admin/slots/${slotId}`, {
     method: 'DELETE',
   });
+
 };
