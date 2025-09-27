@@ -14,6 +14,7 @@ A full-stack parking lot management system featuring a Java & Spring Boot backen
 
 * Frontend - https://parking-lot-reservation-system.netlify.app
 * Backend - https://parking-lot-reservation-system-backend.onrender.com
+* Swagger - https://parking-lot-reservation-system-backend.onrender.com/swagger-ui/index.html
 
 ## Table of Contents
 * [About the Project](#about-the-project)
